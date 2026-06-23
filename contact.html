@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Furniture Mica</title>
+    <meta name="description" content="Get in touch with our team. We're here to help with your furniture mica requirements.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-palette-fill text-primary me-2"></i>Furniture Mica
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogue.html">Catalogue</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-sm btn-outline-primary ms-2" id="darkModeToggle" title="Toggle Dark Mode">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-2">Contact Us</h1>
+            <p class="text-muted lead">Get in touch with our team. We're here to help!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-4">Send us a Message</h3>
+                    <form id="contactForm" class="needs-validation">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                            <div class="invalid-feedback">Please provide your name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="invalid-feedback">Please provide a valid email.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                            <div class="invalid-feedback">Please provide your phone number.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="company" class="form-label">Company Name (Optional)</label>
+                            <input type="text" class="form-control" id="company" name="company">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select class="form-select" id="subject" name="subject" required>
+                                <option value="">Select a subject...</option>
+                                <option value="Product Inquiry">Product Inquiry</option>
+                                <option value="Wholesale Order">Wholesale Order</option>
+                                <option value="Custom Shades">Custom Shades</option>
+                                <option value="Technical Support">Technical Support</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <div class="invalid-feedback">Please select a subject.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            <div class="invalid-feedback">Please provide a message.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                            <i class="bi bi-send me-2"></i>Send Message
+                        </button>
+                        <div id="formMessage" class="mt-3" style="display: none;"></div>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-4">Get in Touch</h3>
+                    <p class="text-muted mb-5">
+                        Have questions about our products? Want to place a wholesale order? Our team is ready to assist you.
+                    </p>
+
+                    <!-- Contact Cards -->
+                    <div class="mb-4">
+                        <div class="d-flex gap-3 mb-4">
+                            <div>
+                                <i class="bi bi-telephone display-4 text-primary"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold">Phone</h6>
+                                <p class="text-muted mb-0">
+                                    <a href="tel:+919876543210" class="text-decoration-none">+91 98765 43210</a>
+                                </p>
+                                <p class="text-muted small">Monday - Saturday, 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex gap-3 mb-4">
+                            <div>
+                                <i class="bi bi-envelope display-4 text-primary"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold">Email</h6>
+                                <p class="text-muted mb-0">
+                                    <a href="mailto:info@furnituremica.com" class="text-decoration-none">info@furnituremica.com</a>
+                                </p>
+                                <p class="text-muted small">We'll respond within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex gap-3 mb-4">
+                            <div>
+                                <i class="bi bi-geo-alt display-4 text-primary"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold">Address</h6>
+                                <p class="text-muted mb-0">
+                                    Furniture Mica Showroom<br>
+                                    New Delhi, India
+                                </p>
+                                <p class="text-muted small">Visit our showroom to see samples</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex gap-3 mb-4">
+                            <div>
+                                <i class="bi bi-chat-dots display-4 text-primary"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold">WhatsApp</h6>
+                                <p class="text-muted mb-0">
+                                    <a href="https://wa.me/919876543210" class="text-decoration-none" target="_blank">
+                                        Start a chat <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </p>
+                                <p class="text-muted small">Quick responses to your queries</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="mt-5 pt-4 border-top">
+                        <p class="text-muted mb-3">Follow us on social media</p>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-outline-primary rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-primary rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-primary rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-primary rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold mb-3">Frequently Asked Questions</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="accordion-item p-4 bg-white rounded-3 shadow-sm mb-3">
+                        <h6 class="fw-bold mb-2">What is the minimum order quantity?</h6>
+                        <p class="text-muted small mb-0">
+                            We offer flexible wholesale quantities. Contact us for bulk order pricing and custom solutions.
+                        </p>
+                    </div>
+                    <div class="accordion-item p-4 bg-white rounded-3 shadow-sm mb-3">
+                        <h6 class="fw-bold mb-2">Do you offer custom shade creation?</h6>
+                        <p class="text-muted small mb-0">
+                            Yes! For large projects, we can create custom mica shades. Our team will work with you to match your exact requirements.
+                        </p>
+                    </div>
+                    <div class="accordion-item p-4 bg-white rounded-3 shadow-sm">
+                        <h6 class="fw-bold mb-2">What is the delivery timeline?</h6>
+                        <p class="text-muted small mb-0">
+                            Most bulk orders are delivered within 7-14 days. Express delivery options are available for urgent requirements.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion-item p-4 bg-white rounded-3 shadow-sm mb-3">
+                        <h6 class="fw-bold mb-2">What payment methods do you accept?</h6>
+                        <p class="text-muted small mb-0">
+                            We accept bank transfers, checks, and digital payments. Custom payment plans available for bulk orders.
+                        </p>
+                    </div>
+                    <div class="accordion-item p-4 bg-white rounded-3 shadow-sm mb-3">
+                        <h6 class="fw-bold mb-2">Are samples available?</h6>
+                        <p class="text-muted small mb-0">
+                            Yes! You can request samples from our website or visit our showroom to see the collection in person.
+                        </p>
+                    </div>
+                    <div class="accordion-item p-4 bg-white rounded-3 shadow-sm">
+                        <h6 class="fw-bold mb-2">How long does mica typically last?</h6>
+                        <p class="text-muted small mb-0">
+                            Our premium quality mica finishes are designed to last 10+ years with proper care and maintenance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-6 fw-bold mb-3">Ready to Get Started?</h2>
+            <p class="lead mb-4">Browse our complete catalogue of 2500+ premium shades</p>
+            <a href="catalogue.html" class="btn btn-light btn-lg">
+                <i class="bi bi-shop me-2"></i>View Catalogue
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">
+                        <i class="bi bi-palette-fill me-2"></i>Furniture Mica
+                    </h6>
+                    <p class="text-muted small">Premium furniture mica shades for modern interiors.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="catalogue.html" class="text-muted text-decoration-none">Catalogue</a></li>
+                        <li><a href="about.html" class="text-muted text-decoration-none">About</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Follow Us</h6>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-sm btn-outline-light">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-outline-light">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-outline-light">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-outline-light">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <p class="text-muted small mb-2">
+                        <i class="bi bi-telephone me-2"></i>+91 98765 43210
+                    </p>
+                    <p class="text-muted small">
+                        <i class="bi bi-envelope me-2"></i>info@furnituremica.com
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted small mb-0">&copy; 2024 Furniture Mica Catalogue. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-muted small mb-0">
+                        <a href="#" class="text-muted text-decoration-none">Privacy Policy</a> | 
+                        <a href="#" class="text-muted text-decoration-none">Terms & Conditions</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210?text=Hi%20I%20would%20like%20to%20know%20more%20about%20your%20furniture%20mica%20collection" 
+       class="whatsapp-float" title="Chat on WhatsApp" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Contact Form Validation & Handling
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Validate form
+                if (!this.checkValidity() === false) {
+                    e.stopPropagation();
+                }
+                
+                this.classList.add('was-validated');
+                
+                if (this.checkValidity()) {
+                    // Get form data
+                    const formData = new FormData(this);
+                    const data = Object.fromEntries(formData);
+                    
+                    // Show success message
+                    const messageDiv = document.getElementById('formMessage');
+                    messageDiv.className = 'alert alert-success';
+                    messageDiv.innerHTML = '<i class="bi bi-check-circle me-2"></i>Thank you! We\'ll be in touch within 24 hours.';
+                    messageDiv.style.display = 'block';
+                    
+                    // Reset form
+                    this.reset();
+                    this.classList.remove('was-validated');
+                    
+                    // Hide message after 5 seconds
+                    setTimeout(() => {
+                        messageDiv.style.display = 'none';
+                    }, 5000);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
